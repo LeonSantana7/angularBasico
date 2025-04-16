@@ -1,0 +1,12 @@
+.botão{
+    border: solid 2px blue;
+    background-color: white;
+    border-radius: 10px;
+    height: 50px;
+    transition: all .3s ease;
+}
+
+.botão:hover{
+    font-size: 14px;
+    
+}

@@ -1,0 +1,24 @@
+<!--Event Binding é como você responde a eventos de interação do usuário (como cliques, digitação, etc.) na sua página.-->
+<!--Click-->
+<button class="botão" (click)="mensagem()">Clique Aqui!</button>
+<br>
+<br>
+<!--Input-->
+<input (input)="atualizarTexto($event)">
+<p>Você digitou: {{ texto }}
+
+<!--Change-->
+<select (change)="selecionar($event)">
+    <option value="A">Opção A</option>
+    <option value="B">Opção B</option>
+</select>
+<p>Selecionado: {{ opcao }}</p>
+
+<form (submit)="enviarFormulario($event)">
+<input type="text" name="nome" placeholder="Digite seu nome">
+<button type="submit">Enviar</button>
+</form>
+
+<br>
+<br>
+
